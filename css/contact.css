@@ -1,0 +1,16 @@
+﻿.contact{background:#9dd3ff;background:url(../images/contact.jpg);height:529px;position:relative}.contact .section-hd{background:transparent;padding-top:33px}.contact .section-hd h3{background-position:50% -325px;height:55px;width:300px}.contact .contact-form{width:486px;height:290px;margin:26px auto}
+.contact .contact-form li{margin:10px 0;text-align:right;height:33px}.contact .contact-form li i{float:left;height:100%;width:33px;background:#2b343c}.contact .contact-form li input,.contact .contact-form li textarea{height:33px;border:0;margin:0;padding:0 5px;width:430px}
+.contact .contact-form li textarea{height:73px;padding:5px;resize:none;overflow:auto}.contact-form .ok{background:url(../images/ok-btn.png) no-repeat;display:block;margin:10px auto 0;height:56px;width:56px;overflow:hidden;text-indent:-999px;opacity:.9}
+.contact-form .ok:hover{opacity:1}.contact .contact-form li.on i{background:#fff url(../images/arrow.png) no-repeat 50%}.contact .arrow-down{position:absolute;height:20px;width:36px;margin-left:-18px;left:50%;bottom:-18px;z-index:10;background:url(../images/arrow-d.png) no-repeat}
+@media(max-width:360px){.news .news-panel dl{width:260px;margin:20px 0 20px 0}.big-slider .carousel-control span{margin-top:-10px}}@media(max-width:640px){.contact .contact-form{width:auto}.contact-form li i{display:none}.contact .contact-form li{text-align:center}
+.contact .contact-form li input,.contact .contact-form li textarea{width:90%}.big-slider .carousel-control span{margin-top:-10px}}@media(max-width:768px){.big-slider .carousel-control span{margin-top:-10px}}@media(max-width:1200px){.our-product-panel{background:0}
+}
+
+.section .section-hd h3 {
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 30px;
+  font-size: 30px;
+}

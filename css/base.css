@@ -1,0 +1,62 @@
+﻿@charset "utf-8";
+html, body, button, input, select, textarea {font:14px/1.5 "宋体","微软雅黑", "黑体", tahoma, arial,  sans-serif; background-color:#FFF;}
+body,
+div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,pre,code,
+form,fieldset,legend,input,textarea,
+p,blockquote,th,td,hr,button {margin:0; padding:0;}
+table {border-collapse:collapse; border-spacing:0;}
+caption,th {text-align:left; font-weight:normal;}
+html,body,fieldset,img,iframe,abbr {border:0;}
+html {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+i,em{font-style:normal;}
+ol,ul,li {list-style:none;}
+h1,h2,h3,h4,h5,h6,small {font-size:100%; font-weight:normal}
+textarea {overflow:auto; resize:none;}
+label {cursor:default;}
+a,button {cursor:pointer;}
+a,a:hover {text-decoration:none;}
+iframe {display: block;}
+input[type="submit"] { border:none;}
+button,input,select,textarea {font-size: 100%;}
+button[disabled],html input[disabled]{cursor: default;}
+input[type="checkbox"],input[type="radio"] {padding:0; box-sizing:border-box; vertical-align:-2px; margin:0px 3px 0px 0px; cursor:pointer;}
+.inline-block {display: inline-block; *display: inline; zoom: 1;}
+::-webkit-input-placeholder {color:#ccc;}
+:-moz-placeholder { color:#999;}
+::-moz-placeholder {color:#999;}
+:-ms-input-placeholder {color:#999;}
+a{outline:none;blr:expression(this.onFocus=this.blur());/*ie过多使用效率低下*/}
+.tl { text-align:left}
+.tc { text-align:center;}
+.tr { text-align:right;}
+.bc { margin-left:auto; margin-right: auto;}
+.fl { float:left;}
+.fr { float:right;}
+.ma {margin:0 auto}
+.vm { vertical-align:middle;}
+.vt { vertical-align:top;}
+.pr { position:relative;}
+.pa { position:absolute;}
+.abs-right { position: absolute; right:0;}
+.abs-left { position: absolute; left:0;}
+.hidden {display:none;}
+.fb {font-weight:bold;}
+.fn {font-weight:normal;}
+.no-unl{text-decoration:none;}
+.word-break {word-break:break-all; word-wrap:break-word;}
+.f12 {font-size:12px!important;}
+.f14 {font-size:14px!important;}
+.f16 {font-size:16px!important;}
+.f18 {font-size:18px!important;}
+.f24 {font-size:24px!important;}
+.f30 {font-size:30px!important;}
+.none {display:none}
+.blue {color:#0095e5}
+.white{color:#fff;}
+/**
+***清理浮动**/
+.clear {clear:both;}
+.clearfix:after,.clearfix:before{content:'';display:table;}
+.clearfix:after{clear:both; overflow:hidden;}
+.clearfix{*zoom:1;}
