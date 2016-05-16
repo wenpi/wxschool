@@ -1,0 +1,177 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>幼儿早教 微教育平台</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- start header -->
+		
+		
+	<script>
+	$(function(){
+		var form = $("#contactForm");
+		$("#formSubmitButton").bind('click', function(){
+			var o = {};
+			var formCheck = true;
+			form.find("input, textarea").each(function(){
+				var val = $(this).val();
+				var regex = $(this).attr('require');
+				if( regex != undefined ){
+					if( regex == 'empty' && val.length ==0 ){
+						alert($(this).attr("tips"));
+						formCheck = false;
+						return false;
+					}else if(regex != 'empty'){
+						regex = eval(regex);
+						if( !regex.test(val) ){
+							alert( $(this).attr("tips") );
+							formCheck = false;
+							return false;
+						}
+					}
+				}
+				o[$(this).attr('name')] = val;
+			});
+			if( !formCheck ){
+				return false;
+			}
+			$.post('/?a=web.selfform.ajax_saveForm&uid=8890', o, function(data){
+				var rs = jQuery.parseJSON(data);
+				alert(rs.msg);
+				if( rs.type == 'success' ){
+					$("input[type=text], textarea").each(function() { $(this).val(''); });
+					document.getElementById('vcode').src = '/?a=code&t='+Math.random();
+				}
+			});
+		});
+	});	
+	</script>
+	
+		<script>
+			$(document).ready(function(){
+			  $(".slipper-us").click(function(){
+				$("#window").fadeToggle(1000);
+			  });	
+			  $("#close").click(function(){
+				$("#window").fadeToggle(1000);
+			  });			  
+			});	
+		</script>
+		
+			<link rel="stylesheet" type="text/css" href="css/zensorium.css" media="all" />
+		<script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+		<link rel="stylesheet" href="css/contact.css">
+<script src="js/contact.js"></script>
+<nav id="cd-vertical-nav" class="navside">
+	<ul>
+		<li>
+			<a href="#1" data-number="1">
+				<span class="cd-dot"></span>
+				<span class="cd-label">建设方案</span>
+			</a>
+		</li>
+		<li>
+			<a href="#2" data-number="2">
+				<span class="cd-dot"></span>
+				<span class="cd-label">春田花花幼儿园</span>
+			</a>
+		</li>
+		<li>
+			<a href="#3" data-number="3">
+				<span class="cd-dot"></span>
+				<span class="cd-label">招生加速器、宝贝天地</span>
+			</a>
+		</li>
+		<li>
+			<a href="#4" data-number="4">
+				<span class="cd-dot"></span>
+				<span class="cd-label">互联网+幼儿园</span>
+			</a>
+		</li>
+		<li>
+			<a href="#5" data-number="5">
+				<span class="cd-dot"></span>
+				<span class="cd-label">助力安全</span>
+			</a>
+		</li>
+		<li>
+			<a href="#5" data-number="6">
+				<span class="cd-dot"></span>
+				<span class="cd-label">**教育科技</span>
+			</a>
+		</li>
+		<li>
+			<a href="#5" data-number="7">
+				<span class="cd-dot"></span>
+				<span class="cd-label">定制开发</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+<div id="sb-site">
+    	<div class="wrapper product tinke-layout">
+		<section class="splash cd-section" id="1" style="margin: 0px;padding: 0px;">
+			<img src="picture/1.jpg" width="100%" />
+		</section>
+		<div class="clear"></div>
+		<section class="splash cd-section" id="2" style="margin: 0px;padding: 0px;">
+			<img src="picture/2.jpg" width="100%" />
+		</section>
+		<div class="clear"></div>
+		<section class="splash cd-section" id="3" style="margin: 0px;padding: 0px;">
+			<img src="picture/3.jpg" width="100%" />
+		</section>
+		<div class="clear"></div>
+		<section class="splash cd-section" id="4" style="margin: 0px;padding: 0px;">
+			<img src="picture/4.jpg" width="100%" />
+		</section>
+		<div class="clear"></div>
+		<section class="splash cd-section" id="5" style="margin: 0px;padding: 0px;">
+			<img src="picture/5.jpg" width="100%" />
+		</section>
+		<div class="clear"></div>
+		<section class="splash cd-section" id="6" style="margin: 0px;padding: 0px;">
+			<img src="picture/5_1.jpg" width="100%" />
+		</section>
+		<div class="clear"></div>
+		<section class="splash cd-section" id="7" style="margin: 0px;padding: 0px;">
+			<img src="picture/8.jpg" width="100%" />
+		</section>
+		<div class="clear"></div>
+	</div><!-- end of wrapper -->
+</div><!-- end of sbsite -->
+
+		
+						
+		<!--客服开始-->
+		<div class="slipper pin">
+			<ul>
+				<li class="slipper-wx">
+					<span class="qr-code-box">
+					<img src="picture/code.jpg" height="186" width="186" alt="关注微信">
+					<i class="arrow"></i>
+					</span>
+				</li>
+								
+			</ul>
+		</div>
+		<!--客服结束-->
+		
+		
+				
+		<!--返回顶部开始-->
+		<div style="" id="rocket-to-top">
+			<div style="opacity: 0; display: block;" class="level-2"></div>
+			<div class="level-3"></div>
+		</div>
+		<!--返回顶部结束-->	
+		<!-- end footer -->
+	</div>
+</body>
+</html>
